@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6074DD6F19AD092800EABE62 /* IWAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074DD6A19AD092800EABE62 /* IWAViewController.m */; };
+		6074DD7019AD092800EABE62 /* IWAFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074DD6C19AD092800EABE62 /* IWAFilterViewController.m */; };
+		6074DD7119AD092800EABE62 /* IWACaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6074DD6E19AD092800EABE62 /* IWACaptionViewController.m */; };
 		60FAFCF219ACBF64004A9E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAFCF119ACBF64004A9E5D /* AppDelegate.swift */; };
 		60FAFCF719ACBF64004A9E5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FAFCF519ACBF64004A9E5D /* Main.storyboard */; };
 		60FAFCF919ACBF64004A9E5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FAFCF819ACBF64004A9E5D /* Images.xcassets */; };
@@ -26,9 +29,6 @@
 		60FAFD2B19ACC110004A9E5D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FAFD2A19ACC110004A9E5D /* SystemConfiguration.framework */; };
 		60FAFD2F19ACCA3C004A9E5D /* FacesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAFD2E19ACCA3C004A9E5D /* FacesTVC.swift */; };
 		60FAFD3319ACCC12004A9E5D /* FaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FAFD3219ACCC12004A9E5D /* FaceCell.swift */; };
-		60FAFD4419ACD1FB004A9E5D /* IWAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAFD3F19ACD1FB004A9E5D /* IWAViewController.m */; };
-		60FAFD4519ACD1FB004A9E5D /* IWAFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAFD4119ACD1FB004A9E5D /* IWAFilterViewController.m */; };
-		60FAFD4619ACD1FB004A9E5D /* IWACaptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60FAFD4319ACD1FB004A9E5D /* IWACaptionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6074DD6919AD092800EABE62 /* IWAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWAViewController.h; path = "../../iOS_Beginner/InstaWhat?/InstaWhat?/IWAViewController.h"; sourceTree = "<group>"; };
+		6074DD6A19AD092800EABE62 /* IWAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWAViewController.m; path = "../../iOS_Beginner/InstaWhat?/InstaWhat?/IWAViewController.m"; sourceTree = "<group>"; };
+		6074DD6B19AD092800EABE62 /* IWAFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWAFilterViewController.h; path = "../../iOS_Beginner/InstaWhat?/InstaWhat?/IWAFilterViewController.h"; sourceTree = "<group>"; };
+		6074DD6C19AD092800EABE62 /* IWAFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWAFilterViewController.m; path = "../../iOS_Beginner/InstaWhat?/InstaWhat?/IWAFilterViewController.m"; sourceTree = "<group>"; };
+		6074DD6D19AD092800EABE62 /* IWACaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWACaptionViewController.h; path = "../../iOS_Beginner/InstaWhat?/InstaWhat?/IWACaptionViewController.h"; sourceTree = "<group>"; };
+		6074DD6E19AD092800EABE62 /* IWACaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWACaptionViewController.m; path = "../../iOS_Beginner/InstaWhat?/InstaWhat?/IWACaptionViewController.m"; sourceTree = "<group>"; };
 		60FAFCEC19ACBF64004A9E5D /* Swiftly Parse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swiftly Parse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		60FAFCF019ACBF64004A9E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60FAFCF119ACBF64004A9E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,12 +72,6 @@
 		60FAFD2A19ACC110004A9E5D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		60FAFD2E19ACCA3C004A9E5D /* FacesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacesTVC.swift; sourceTree = "<group>"; };
 		60FAFD3219ACCC12004A9E5D /* FaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCell.swift; sourceTree = "<group>"; };
-		60FAFD3E19ACD1FB004A9E5D /* IWAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWAViewController.h; path = "../InstaWhat?/InstaWhat?/IWAViewController.h"; sourceTree = "<group>"; };
-		60FAFD3F19ACD1FB004A9E5D /* IWAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWAViewController.m; path = "../InstaWhat?/InstaWhat?/IWAViewController.m"; sourceTree = "<group>"; };
-		60FAFD4019ACD1FB004A9E5D /* IWAFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWAFilterViewController.h; path = "../InstaWhat?/InstaWhat?/IWAFilterViewController.h"; sourceTree = "<group>"; };
-		60FAFD4119ACD1FB004A9E5D /* IWAFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWAFilterViewController.m; path = "../InstaWhat?/InstaWhat?/IWAFilterViewController.m"; sourceTree = "<group>"; };
-		60FAFD4219ACD1FB004A9E5D /* IWACaptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IWACaptionViewController.h; path = "../InstaWhat?/InstaWhat?/IWACaptionViewController.h"; sourceTree = "<group>"; };
-		60FAFD4319ACD1FB004A9E5D /* IWACaptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IWACaptionViewController.m; path = "../InstaWhat?/InstaWhat?/IWACaptionViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,12 +187,12 @@
 		60FAFD3419ACD14B004A9E5D /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				60FAFD3E19ACD1FB004A9E5D /* IWAViewController.h */,
-				60FAFD3F19ACD1FB004A9E5D /* IWAViewController.m */,
-				60FAFD4019ACD1FB004A9E5D /* IWAFilterViewController.h */,
-				60FAFD4119ACD1FB004A9E5D /* IWAFilterViewController.m */,
-				60FAFD4219ACD1FB004A9E5D /* IWACaptionViewController.h */,
-				60FAFD4319ACD1FB004A9E5D /* IWACaptionViewController.m */,
+				6074DD6919AD092800EABE62 /* IWAViewController.h */,
+				6074DD6A19AD092800EABE62 /* IWAViewController.m */,
+				6074DD6B19AD092800EABE62 /* IWAFilterViewController.h */,
+				6074DD6C19AD092800EABE62 /* IWAFilterViewController.m */,
+				6074DD6D19AD092800EABE62 /* IWACaptionViewController.h */,
+				6074DD6E19AD092800EABE62 /* IWACaptionViewController.m */,
 			);
 			name = ObjC;
 			sourceTree = "<group>";
@@ -298,10 +298,10 @@
 			files = (
 				60FAFD3319ACCC12004A9E5D /* FaceCell.swift in Sources */,
 				60FAFD2F19ACCA3C004A9E5D /* FacesTVC.swift in Sources */,
-				60FAFD4519ACD1FB004A9E5D /* IWAFilterViewController.m in Sources */,
-				60FAFD4419ACD1FB004A9E5D /* IWAViewController.m in Sources */,
+				6074DD7019AD092800EABE62 /* IWAFilterViewController.m in Sources */,
+				6074DD6F19AD092800EABE62 /* IWAViewController.m in Sources */,
 				60FAFCF219ACBF64004A9E5D /* AppDelegate.swift in Sources */,
-				60FAFD4619ACD1FB004A9E5D /* IWACaptionViewController.m in Sources */,
+				6074DD7119AD092800EABE62 /* IWACaptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +500,7 @@
 				60FAFD0A19ACBF64004A9E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60FAFD0B19ACBF64004A9E5D /* Build configuration list for PBXNativeTarget "Swiftly ParseTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +509,7 @@
 				60FAFD0D19ACBF64004A9E5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
