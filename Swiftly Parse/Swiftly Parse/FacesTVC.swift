@@ -11,7 +11,7 @@ import UIKit
 class FacesTVC: UITableViewController {
 
    
-    var faces: [PFObject] = []
+    var faces: [AnyObject] = []
     
     
     override func viewDidLoad() {
@@ -25,17 +25,21 @@ class FacesTVC: UITableViewController {
         
         
         Parse.setApplicationId("FcVpPBuGSY7BzLFuhzpdCHFEAp8RDTRKC1CYEfyj", clientKey: "rTINPQrGFiliSXNt9A0DN7ZrZNiQDTneRUNeOMbq")
-    
-      
-        
-        
-        
         
     }
     
     override func viewWillAppear(animated: Bool) {
         
+        super.viewWillAppear(animated);
         
+        var query = PFQuery(className: "Faces")
+        
+        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
+            
+        self.faces = objects
+        self.tableView.reloadData()
+        
+        }
     }
     
 
@@ -49,12 +53,6 @@ class FacesTVC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
-    }
-
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
@@ -65,9 +63,11 @@ class FacesTVC: UITableViewController {
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as FaceCell
         
-        var faceInfo = faces[indexPath.row] as PFObject 
+        var faceInfo = faces[indexPath.row] as PFObject
+        
+        var file = faceInfo.objectForKey("image") as PFFile
 
-//       cell.faceView = 
+        cell.FaceView.image = UIImage(data: file.getData())
         
         // Configure the cell...
 
