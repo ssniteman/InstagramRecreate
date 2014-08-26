@@ -32,6 +32,12 @@ class FacesTVC: UITableViewController {
         
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
