@@ -26,12 +26,28 @@ class FacesTVC: UITableViewController {
         
         Parse.setApplicationId("FcVpPBuGSY7BzLFuhzpdCHFEAp8RDTRKC1CYEfyj", clientKey: "rTINPQrGFiliSXNt9A0DN7ZrZNiQDTneRUNeOMbq")
         
+        self.refreshData()
+        
+        // observes and posts notifications
+        
+        var nc = NSNotificationCenter.defaultCenter()
+        
+        nc.addObserverForName("faceSaved", object: nil, queue: NSOperationQueue.mainQueue()) { (notification: NSNotification!) -> Void in
+            
+            self.refreshData()
+            
+        }
+        
+        
+        
     }
     
-    override func viewWillAppear(animated: Bool) {
-        
-        super.viewWillAppear(animated);
-        
+//    override func viewWillAppear(animated: Bool) {
+    
+//        super.viewWillAppear(animated);
+    
+    func refreshData() {
+    
         var query = PFQuery(className: "Faces")
         
         query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
